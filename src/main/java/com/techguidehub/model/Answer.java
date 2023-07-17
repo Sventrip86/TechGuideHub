@@ -1,8 +1,6 @@
 package com.techguidehub.model;
 
 
-
-
 import jakarta.persistence.*;
 
 
