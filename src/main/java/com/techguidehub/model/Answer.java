@@ -1,4 +1,4 @@
-package com.techguidehub.techguidehub.model;
+package com.techguidehub.model;
 
 
 
@@ -16,6 +16,25 @@ public class Answer {
     private Long answerId;
     private String body;
 
+
+    public Long getAnswerId() {
+        return answerId;
+    }
+
+
+    public void setAnswerId(Long answerId) {
+        this.answerId = answerId;
+    }
+
+
+    public String getBody() {
+        return body;
+    }
+
+
+    public void setBody(String body) {
+        this.body = body;
+    }
 
     @ManyToOne
     @JoinColumn( name = "questionId")

@@ -1,4 +1,4 @@
-package com.techguidehub.techguidehub.model;
+package com.techguidehub.model;
 
 import jakarta.persistence.*;
 

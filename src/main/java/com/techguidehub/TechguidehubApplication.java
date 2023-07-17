@@ -1,4 +1,4 @@
-package com.techguidehub.techguidehub;
+package com.techguidehub;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

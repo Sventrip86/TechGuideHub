@@ -1,4 +1,5 @@
-package com.techguidehub.techguidehub.model;
+package com.techguidehub.model;
+
 
 
 
