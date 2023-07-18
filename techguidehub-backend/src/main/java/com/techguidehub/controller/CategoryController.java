@@ -1,5 +1,3 @@
-package com.techguidehub.controller;
-
 import com.techguidehub.model.Category;
 import com.techguidehub.service.CategoryService;
 import org.springframework.web.bind.annotation.*;
