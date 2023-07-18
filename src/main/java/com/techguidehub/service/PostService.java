@@ -24,7 +24,7 @@ public class PostService {
         return postRepository.findById(id).orElse(null);
     }
 
-    public Post creaPost(Post post) {
+    public Post createPost(Post post) {
         return postRepository.save(post);
     }
 
