@@ -1,3 +1,5 @@
+package com.techguidehub.controller;
+
 import com.techguidehub.model.PostTag;
 import com.techguidehub.service.PostTagService;
 import org.springframework.web.bind.annotation.*;
