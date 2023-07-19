@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { PostService } from 'src/app/services/posts.service';
 import { Post } from 'src/app/models/post';
+import { Category } from 'src/app/models/category';
+import { CategoryService } from 'src/app/services/category.service';
+
 
 
 @Component({
@@ -12,7 +15,6 @@ export class PostsComponent {
   post = new Post();
   submitted = false;
 
-  constructor(private postService: PostService) { } // Inject PostService
 
   onSubmit() {
     this.submitted = true;
@@ -22,5 +24,21 @@ export class PostsComponent {
     );
   }
 
+
+  categories: Category[] = [];
+
+constructor(private postService: PostService, private categoryService: CategoryService) { }
+
+ngOnInit(): void {
+  this.getCategories();
+}
+
+getCategories(): void {
+  this.categoryService.getCategories().subscribe(categories => this.categories = categories);
+}
+
+  
+
+  
 
 }

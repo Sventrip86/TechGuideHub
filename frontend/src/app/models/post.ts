@@ -1,3 +1,4 @@
+import { Category } from "./category";
 import { User } from "./user";
 
 
@@ -8,6 +9,7 @@ export class Post {
   dateCreated?: Date;
   likes?: number;
   user?: User;
+  category?: Category;
   
 
   constructor(id?: number, title?: string, body?: string, dateCreated?: Date, likes?: number, user?: User) {
