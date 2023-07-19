@@ -1,5 +1,3 @@
-package com.techguidehub.controller;
-
 import com.techguidehub.model.Answer;
 import com.techguidehub.service.AnswerService;
 import org.springframework.web.bind.annotation.*;

@@ -12,26 +12,29 @@ import { AnswersComponent } from './components/answers/answers.component';
 import { TagsComponent } from './components/tags/tags.component';
 import { PostTagsComponent } from './components/post-tags/post-tags.component';
 import { FormsModule } from '@angular/forms'; 
-import { HttpClientModule } from '@angular/common/http'; 
+import { HttpClientModule } from '@angular/common/http';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations'; 
 
 @NgModule({
   declarations: [
     AppComponent,
     UsersComponent,
-    PostsComponent,
     CommentsComponent,
     CategoriesComponent,
     QuestionsComponent,
     AnswersComponent,
     TagsComponent,
-    PostTagsComponent
+    PostTagsComponent,
+    PostsComponent
     
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule
+    HttpClientModule,
+    BrowserAnimationsModule,
+    PostsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]
